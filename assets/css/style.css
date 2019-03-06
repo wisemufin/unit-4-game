@@ -24,6 +24,11 @@ h6 {
   font-size: .67em;
 }
 
+p {
+  display: block;
+  margin: 1em 0em;
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
 }
@@ -40,4 +45,67 @@ header {
 header h1 {
   color: white;
   font-weight: bold;
+}
+
+/* Instructions box styling */
+.container-width {
+  width: 95%;
+  margin: 20px auto;
+}
+
+.instructions-text {
+  padding: 0 10px;
+  border: 1px solid lightgrey;
+  border-radius: 0 0 10px 10px;
+}
+
+.box-header {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  background-color: #F2F2F2;
+  border: 1px solid lightgrey;
+  border-bottom: 0px;
+  border-radius: 10px 10px 0 0;
+  font-weight: bold;
+}
+
+/* Styling for box where random number will appear */
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.box-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.medium-box {
+  width: 40%;
+}
+
+.box-header-alt {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  background-color: #F2F2F2;
+  border: 1px solid lightgrey;
+  border-bottom: 0px;
+  border-radius: 10px 10px 0 0;
+  font-weight: bold;
+}
+
+/* .flex-column {
+  display: flex;
+  flex-direction: column;
+} */
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
 }
