@@ -79,6 +79,13 @@ header h1 {
   width: 20%;
 }
 
+.half-width-column {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  margin-right: 10%;
+}
+
 .box-container {
   display: flex;
   flex-direction: column;
@@ -109,6 +116,11 @@ header h1 {
 .flex-container {
   display: flex;
   justify-content: space-between;
+}
+
+.flex-container-alt {
+  display: flex;
+
 }
 
 .score-alignment {
