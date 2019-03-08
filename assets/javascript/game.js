@@ -24,7 +24,7 @@ function jewelNumbers() {
   topazNumber = Math.floor(Math.random() * 12) + 1;
 
   // Sets userNumber to 0 and displays it on the screen
-  // userNumber = 0;
+  userNumber = 0;
   $("#yourScore").text(userNumber);
 }
 
@@ -45,11 +45,75 @@ jewelNumbers();
 // Sets the wins and losses to 0 and displays them on the screen
 gameStart();
 
+$(document).ready(function() {
+
 // On click functions for jewels
 $("#crystal").on("click", function() {
-  if (true) {
+    userNumber += crystalNumber;
+    $("#yourScore").text(userNumber);
 
-  }
-  userNumber += crystalNumber;
-  console.log(userNumber);
+  if (userNumber === computerNumber) {
+    winCounter++;
+    $("#winCount").text(winCounter);
+    jewelNumbers();
+    targetNumber();
+  } else if (userNumber > computerNumber) {
+    lossCounter++;
+    $("#lossCount").text(lossCounter);
+    jewelNumbers();
+    targetNumber();
+  };
+});
+
+$("#emerald").on("click", function() {
+    userNumber += emeraldNumber;
+    $("#yourScore").text(userNumber);
+
+  if (userNumber === computerNumber) {
+    winCounter++;
+    $("#winCount").text(winCounter);
+    jewelNumbers();
+    targetNumber();
+  } else if (userNumber > computerNumber) {
+    lossCounter++;
+    $("#lossCount").text(lossCounter);
+    jewelNumbers();
+    targetNumber();
+  };
+});
+
+$("#sapphire").on("click", function() {
+    userNumber += sapphireNumber;
+    $("#yourScore").text(userNumber);
+
+  if (userNumber === computerNumber) {
+    winCounter++;
+    $("#winCount").text(winCounter);
+    jewelNumbers();
+    targetNumber();
+  } else if (userNumber > computerNumber) {
+    lossCounter++;
+    $("#lossCount").text(lossCounter);
+    jewelNumbers();
+    targetNumber();
+  };
+});
+
+$("#topaz").on("click", function() {
+    userNumber += topazNumber;
+    $("#yourScore").text(userNumber);
+    
+  if (userNumber === computerNumber) {
+    winCounter++;
+    $("#winCount").text(winCounter);
+    jewelNumbers();
+    targetNumber();
+  } else if (userNumber > computerNumber) {
+    lossCounter++;
+    $("#lossCount").text(lossCounter);
+    jewelNumbers();
+    targetNumber();
+  };
+});
+
 });
